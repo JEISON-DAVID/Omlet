@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videollamadas Anónimas</title>
+    <link rel="stylesheet" href="omlet.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Videollamadas Anónimas</h1>
+        <div class="options">
+            <button id="startRandomCall">Conectar con Usuario al Azar</button>
+            <button id="startIdCall">Conectar por ID</button>
+        </div>
+        <div id="peerIdContainer" class="hidden">
+            <p>Tu ID: <span id="peerId"></span></p>
+            <button id="copyIdButton">Copiar ID</button>
+        </div>
+        <div id="videoContainer" class="hidden">
+            <div class="video-wrapper">
+                <video id="localVideo" autoplay muted></video>
+                <video id="remoteVideo" autoplay></video>
+            </div>
+            <div class="controls">
+                <button id="toggleCamera">Cámara</button>
+                <button id="toggleMic">Micrófono</button>
+                <button id="endCall">Cortar Llamada</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Videollamadas Anónimas. Todos los derechos reservados.</p>
+            <p>Creado por <strong>[Tu Nombre]</strong></p>
+            <p>Contacto: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="omlet.js"></script>
+</body>
+</html>
